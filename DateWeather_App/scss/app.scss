@@ -1,0 +1,236 @@
+@import "settings";
+@import "foundation";
+
+
+$maincolor:     #E06B7E;
+$dark:          #881F33;
+$secondary:     #3CA193;
+$lightgrey:     #C9C3C5;
+$darkgrey:      #333333;
+$cursivetext:   'Great Vibes';
+
+body{
+  &.home{
+    background-image: url('../img/main_photo.jpg');
+  }
+  &.weather_page{
+    background-image: url('../img/weather_photo.jpg');
+    background-position: bottom;
+  }
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: $lightgrey;
+}
+h1{
+  font-family: $cursivetext, cursive;
+  font-size: 8rem;
+  text-align: center;
+  color: $dark;
+  line-height: 6rem;
+  &.first-line{
+    transform: translateX(-3rem) rotate(-7deg);
+    -ms-transform: translateX(-3rem) rotate(-7deg);
+    -webkit-transform: translateX(-3rem) rotate(-7deg);
+  }
+  &.second-line{
+    transform: translateX(3rem) rotate(-7deg);
+    -ms-transform: translateX(3rem) rotate(-7deg);
+    -webkit-transform: translateX(3rem) rotate(-7deg);
+  }
+}
+p{
+  &.first-line{
+    transform: translateX(-3rem) rotate(-7deg);
+    -ms-transform: translateX(-3rem) rotate(-7deg);
+    -webkit-transform: translateX(-3rem) rotate(-7deg);
+  }
+  &.second-line{
+    transform: translateX(3rem) rotate(-7deg);
+    -ms-transform: translateX(3rem) rotate(-7deg);
+    -webkit-transform: translateX(3rem) rotate(-7deg);
+  }
+}
+.headertext{
+  font-size: 2rem;
+  font-family: $cursivetext;
+  padding: 2rem;
+  color: $lightgrey;
+}
+select{
+  border: none;
+}
+input{
+  border: none;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.top-bar{
+  height: 6rem;
+  background-color: $maincolor;
+  margin-bottom: 2rem;
+  .left{
+    margin: 0;
+    padding: 0;
+    img{
+      height: 6rem;
+      padding: .5rem 1em;
+    }
+  }
+  .fa{
+    padding: 1.5rem 1rem;
+    color: $lightgrey;
+    &:hover{
+      color: darken( $lightgrey, 10% );
+    }
+  }
+}
+a.button{
+  background-color: $maincolor;
+  padding: 1rem 3rem;
+  color: $lightgrey;
+  &:hover{
+    background-color: darken( $maincolor, 10% );
+  }
+}
+
+a.button.green_option{
+    background-color: $secondary;
+    padding: 1rem 3rem;
+    &:hover{
+      background-color: darken( $secondary, 10% );
+    }
+  }
+
+
+.form{
+  .prefix{
+    height: 4rem;
+    padding: .5rem 0;
+    border-top: 2px $secondary solid;
+    border-left: 2px $secondary solid;
+    border-bottom: 2px $secondary solid;
+    border-right: none;
+    background-color: rgba( $lightgrey, .6 );
+    color: $dark;
+  }
+  input{
+    height: 4rem;
+    border-top: 2px $secondary solid;
+    border-left: none;
+    border-bottom: 2px $secondary solid;
+    border-right: 2px $secondary solid;
+    background-color: rgba( $lightgrey, .6 );
+    font-size: 2rem;
+    color: $darkgrey;
+    &:focus {
+      outline-color: transparent;
+      outline-style: none;
+      border-top: 2px $secondary solid;
+      border-left: none;
+      border-bottom: 2px $secondary solid;
+      border-right: 2px $secondary solid;
+      background-color: $lightgrey;
+    }
+  }
+  ::-webkit-input-placeholder {
+    color: $darkgrey;
+  }
+  ::-moz-placeholder { /* Firefox 19+ */
+    color: $darkgrey;
+  }
+  :-ms-input-placeholder {
+    color: $darkgrey;
+  }
+  :-moz-placeholder { /* Firefox 18- */
+    color: $darkgrey;
+  }
+  select{
+    height: 4rem;
+    border-top: 2px $secondary solid;
+    border-left: none;
+    border-bottom: 2px $secondary solid;
+    border-right: 2px $secondary solid;
+    background-color: rgba( $lightgrey, .6 );
+    font-size: 2rem;
+    color: $darkgrey;
+    &:focus {
+      outline-color: transparent;
+      outline-style: none;
+    }
+  }
+}
+.placeholder{
+  color: $darkgrey;
+}
+.weather{
+  height: 6rem;
+  border: 2px $secondary solid;
+  background-color: rgba( $lightgrey, .6 );
+  margin-bottom: 30px;
+  padding-top: .5rem;
+  font-size: 2.75rem;
+  color: $darkgrey;
+  &:hover{
+    background-color: $lightgrey;
+    border: 2px darken($secondary, 20%) solid;
+  }
+  span{
+    font-size: 1.25rem;
+  }
+  img{
+    height: 5rem;
+    padding-left: .5rem;
+  }
+  a{
+    color: $darkgrey;
+  }
+}
+.space{
+  margin-bottom: 1rem;
+}
+
+.weather_info{
+  position: relative;
+  height: 6rem;
+  border: 2px $secondary solid;
+  background-color: $secondary;
+  padding-top: .5rem;
+  font-size: 2.75rem;
+  color: $lightgrey;
+  text-align: center;
+  span{
+    font-size: 1.25rem;
+  }
+  img{
+    height: 5rem;
+    padding-left: .5rem;
+  }
+}
+.weather_statement{
+  position: relative;
+  border: 2px $secondary solid;
+  background-color: $secondary;
+  padding: .5rem;
+  font-size: 1rem;
+  color: $lightgrey;
+}
+.suggestion{
+  position: relative;
+  border: 2px $secondary solid;
+  background-color: rgba( $lightgrey, .6 );
+  padding: 1rem;
+  font-size: 2.75rem;
+  color: $darkgrey;
+  text-align: center;
+}
+.hero_image{
+  height: 10rem;
+  background-image: url('../img/hands.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  background-color: $lightgrey;
+}

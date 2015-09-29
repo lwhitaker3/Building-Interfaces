@@ -1,0 +1,113 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfect Date</title>
+    <link rel="stylesheet" href="stylesheets/app.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+
+  </head>
+  <body class="home">
+    <nav class="top-bar" data-topbar role="navigation">
+      <ul class="left">
+        <li><img src="img/logo.png" alt="main image"></li>
+      </ul>
+
+      <ul class="right">
+        <li><a href="#"  data-reveal-id="myModal"><i class="fa fa-question fa-3x"></i></a></li>
+
+        <div id="myModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+          <h2 id="modalTitle">About Perfect Date</h2>
+          <p class="lead">Plan your perfect date based on the weather</p>
+          <p>Enter your information and get an idea for your next date</p>
+          <a class="close-reveal-modal" aria-label="Close">&#215;</a>
+        </div>
+      </ul>
+
+    </nav>
+
+    <div class="row">
+      <div class="small-8 small-centered columns">
+        <h1 class="first-line">Perfect</h1><h1 class="second-line">Date</h1>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="medium-8 small-10 small-centered columns">
+        <p>Plan your next date based on the weather!</p>
+      </div>
+    </div>
+
+    <div class="form">
+      <div class="row">
+        <div class="medium-8 small-10 small-centered columns">
+          <div class="row collapse">
+            <div class="small-3 large-2 columns">
+              <span class="prefix"><i class="fa fa-map-marker fa-3x"></i></span>
+            </div>
+            <div class="small-9 large-10 columns">
+              <input type="text" placeholder="Enter your zip code">
+            </div>
+          </div>
+          <div class="row collapse">
+            <div class="small-3 large-2 columns">
+              <span class="prefix"><i class="fa fa-calendar-o fa-3x"></i></span>
+            </div>
+            <div class="small-9 large-10 columns">
+              <select>
+                <option value="day1">Day 1</option>
+                <option value="day2">Day 2</option>
+                <option value="day3">Day 3</option>
+                <option value="day4">Day 4</option>
+              </select>
+            </div>
+          </div>
+          <div class="row collapse">
+            <div class="small-3 large-2 columns">
+              <span class="prefix"><i class="fa fa-clock-o fa-3x"></i></span>
+            </div>
+            <div class="small-9 large-10 columns">
+              <select>
+                <option value="morning">Morning</option>
+                <option value="afternoon">Afternoon</option>
+                <option value="night">Night</option>
+              </select>
+            </div>
+          </div>
+          <div class="row collapse">
+            <div class="small-3 large-2 columns">
+              <span class="prefix"><i class="fa fa-question fa-3x"></i></span>
+            </div>
+            <div class="small-9 large-10 columns">
+              <select>
+                <option value="category1">Category 1</option>
+                <option value="category1">Category 2</option>
+                <option value="category1">Category 3</option>
+                <option value="category1">Category 4</option>
+                <option value="category1">Category 5</option>
+                <option value="category1">Category 6</option>
+              </select>
+            </div>
+          </div>
+          <a href="date_idea.html" class="button right"><i class="fa fa-arrow-right fa-2x"></i></a>
+        </div>
+
+
+      </div>
+
+
+    </div>
+
+
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/foundation/js/foundation.min.js"></script>
+    <script src="bower_components/foundation/js/foundation/foundation.dropdown.js"></script>
+      <script src="bower_components/foundation/js/foundation/foundation.topbar.js"></script>
+    <script src="js/app.js"></script>
+
+  </body>
+</html>
