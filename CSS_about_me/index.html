@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Louise's About Me Page</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='https://fonts.googleapis.com/css?family=Parisienne' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body onload="rotateText()">
+
+      <header>
+        <div id="logo_container">
+          <img id="logo" src="img/logo.png" alt="MyLogo">
+        </div>
+        <h1><span class="pink">L</span>ouise <span class="orange">W</span>hitaker</h1>
+        <p id="head_text">Graduate Student &middot; Interactive Media</p>
+      </header>
+
+      <div id="main">
+
+
+        <div id="part1">
+          <div id="quote_container">
+            <img id="quotemark" src="img/quotes-01.png" alt="Quote Mark">
+            <p id="quote">Be who you are and say what you feel because those who mind don't matter and those who matter don't mind."</p>
+            <p id="suess">~Dr. Seuss</p>
+          </div>
+        </div>
+
+        <section id="part2">
+          <h2 id="rotator">I am a<span id="underline"><span id="change"></span></span>.</h2>
+          <div id="goofypics">
+            <img class="picsOfMe" id="posing" src="img/posing.png" alt="Posing Picture">
+            <img class="picsOfMe" id="turtle" src="img/turtle.png" alt="Turtle Picture">
+            <img class="picsOfMe" id="hat" src="img/silly_hat.png" alt="Silly Hat Picture">
+            <img class="picsOfMe" id="olaf" src="img/olaf.png" alt="Olaf Selfie">
+          </div>
+          <div id="aboutme">
+            <p>Let me introduce myself. Hi! my name is <span class="pink">Louise</span>! I am currently a <span class="orange">graduate student</span> at the <span class="pink">University of Miami</span> studying <span class="orange">interactive media</span>. How I got here is a long story that started 22 years ago.</p>
+            <p>I have always loved <span class="pink">design</span> and <span class="orange">technology</span>. My hope is that when I graduate I will have a career in <span class="pink">UX</span> where I can combine those two passions. I believe that using technolgy should be simple and intuitive.</p>
+            <p>The one thing that everyone knows about me is how much I love my hometown. I wasn't born there, but I have lived in <span class="orange">Seattle</span> since I was six years old. When I graduated high school I couldn't wait to leave, but four years later I can't wait to go back.</p>
+            <p>I graduated last year with my <span class="pink">Bachelor's Degree in Communication</span>. I am not biased or anything but the University of Miami is the best school on the country. The friends I have made and the people I have met in my time here have had such a great impact on my life.<p>
+          </div>
+        </section>
+
+        <section id="part3">
+          <div id="favorites">
+            <h2 id="few">A few of my favorite things...</h2>
+            <div id="icons">
+              <img id="myPicture" src="img/icons.png" alt="favorite icons">
+            </div>
+            <div id="list">
+              <ul>
+                <li><a class="prettylink" href="http://www.seattle.gov/visiting-seattle" title="Seattle Website">- City: Seattle</a></li>
+                <li><a class="prettylink" href="http://frozen.disney.com/" title="Frozen Movie">- Disney Movie: Frozen</a></li>
+                <li><a class="prettylink" href="http://www.seahawks.com/" title="Seahawks">- Sports Team: Seahawks</a></li>
+                <li><a class="prettylink" href="http://www.imdb.com/title/tt0092890/" title="Dirty Dancing">- Movie: Dirty Dancing</a></li>
+                <li><a class="prettylink" href="http://www.mamma-mia.com/" title="Mamma Mia!">- Musical: Mamma Mia!</a></li>
+                <li><a class="prettylink" href="http://www.maroon5.com/" title="Maroon 5">- Band: Maroon 5</a></li>
+                <li><a class="prettylink" href="https://www.pottermore.com/en-us/" title="Harry Potter">- Books: Harry Potter</a></li>
+                <li><a class="prettylink" href="https://www.pinterest.com/explore/scrapbooking/" title="Scrapbooking">- Hobby: Scrapbooking</a></li>
+                <li><a class="prettylink" href="http://www.history.com/" title="History">- Subject: History</a></li>
+                <li><a class="prettylink" href="http://www.starbucks.com/" title="Coffee">- Drink: Coffee</a></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section id="part4">
+          <h2>So, how did I get here?</h2>
+          <div id="timeline">
+            <div id="line-wrapper">
+              <div id="line">
+                <img onmousemove="timelineExpand()" class="tl_pictures" src="img/timeline1.png" alt="Timeline1">
+                <img class="arrow" src="img/arrow.png" alt="arrow">
+                <img onmousemove="timelineExpand2()" class="tl_pictures" src="img/timeline2.png" alt="Timeline2">
+                <img class="arrow" src="img/arrow.png" alt="arrow">
+                <img onmousemove="timelineExpand3()" class="tl_pictures" src="img/timeline3.png" alt="Timeline3">
+                <img class="arrow" src="img/arrow.png" alt="arrow">
+                <img onmousemove="timelineExpand4()" class="tl_pictures" src="img/timeline4.png" alt="Timeline4">
+                <img class="arrow" src="img/arrow.png" alt="arrow">
+                <img onmousemove="timelineExpand5()" class="tl_pictures" src="img/timeline5.png" alt="Timeline5">
+                <img class="arrow" src="img/arrow.png" alt="arrow">
+                <img onmousemove="timelineExpand6()" class="tl_pictures" src="img/timeline6.png" alt="Timeline6">
+                <img class="arrow" src="img/arrow.png" alt="arrow">
+                <img onmousemove="timelineExpand7()" class="tl_pictures" src="img/timeline7.png" alt="Timeline7">
+                <img class="arrow" src="img/arrow.png" alt="arrow">
+                <img onmousemove="timelineExpand8()" class="tl_pictures" src="img/timeline4.png" alt="Timeline8">
+              </div>
+            </div>
+            <div id="timeline_pic"></div>
+            <div id="text_wrapper">
+              <div id="date"></div>
+              <div id="timeline_text"></div>
+            </div>
+          </div>
+
+        </section>
+
+      </div>
+
+      <footer>
+        <p id="footertext"><span class="pink">L</span>ouise <span class="orange">W</span>hitaker</p>
+        <div id="contact">
+          <a class ="icon1" href="https://twitter.com/LouiseWhitaker2" title="Twitter"></a>
+          <a class ="icon2" href="https://www.linkedin.com/in/louiserwhitaker" title="Twitter"></a>
+          <a class ="icon3" href="mailto:l.whitaker@umiami.edu" title="Twitter"></a>
+        </div>
+      </footer>
+
+      <script src="js/main.js"></script>
+    </body>
+</html>
