@@ -5,11 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Perfect Date</title>
     <link rel="stylesheet" href="stylesheets/app.css" />
+    <link rel="stylesheet" href="stylesheets/foundation-datepicker.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
 
-  </head>
+    <link href='https://fonts.googleapis.com/css?family=Karma' rel='stylesheet' type='text/css'>
+</head>
   <body class="home">
     <nav class="top-bar" data-topbar role="navigation">
       <ul class="left">
@@ -17,29 +18,18 @@
       </ul>
 
       <ul class="right">
-        <li><a href="#"  data-reveal-id="myModal"><i class="fa fa-question fa-3x"></i></a></li>
+        <li><a href="#"  data-reveal-id="myModal"><i class="fa fa-question fa-2x"></i></a></li>
 
         <div id="myModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
-          <h2 id="modalTitle">About Perfect Date</h2>
+          <h1 id="modalTitle">About Perfect Date</h1>
           <p class="lead">Plan your perfect date based on the weather</p>
-          <p>Enter your information and get an idea for your next date</p>
+          <p>Enter your zip code so we can see the weather in your area. From there we will look at what time of day and what type of date you want to go on and give you an idea for your next date. The rest is up to you!</p>
           <a class="close-reveal-modal" aria-label="Close">&#215;</a>
         </div>
       </ul>
 
     </nav>
 
-    <div class="row">
-      <div class="small-8 small-centered columns">
-        <h1 class="first-line">Perfect</h1><h1 class="second-line">Date</h1>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="medium-8 small-10 small-centered columns">
-        <p>Plan your next date based on the weather!</p>
-      </div>
-    </div>
 
     <div class="form">
       <div class="row">
@@ -57,12 +47,7 @@
               <span class="prefix"><i class="fa fa-calendar-o fa-3x"></i></span>
             </div>
             <div class="small-9 large-10 columns">
-              <select>
-                <option value="day1">Day 1</option>
-                <option value="day2">Day 2</option>
-                <option value="day3">Day 3</option>
-                <option value="day4">Day 4</option>
-              </select>
+              <input type="text" class="span2" value="09-16-2015" id="dp1">
             </div>
           </div>
           <div class="row collapse">
@@ -73,7 +58,7 @@
               <select>
                 <option value="morning">Morning</option>
                 <option value="afternoon">Afternoon</option>
-                <option value="night">Night</option>
+                <option value="night">Evening</option>
               </select>
             </div>
           </div>
@@ -92,7 +77,7 @@
               </select>
             </div>
           </div>
-          <a href="date_idea.html" class="button right"><i class="fa fa-arrow-right fa-2x"></i></a>
+          <a href="date_idea.html" class="button right small-4"><i class="fa fa-arrow-right fa-2x"></i></a>
         </div>
 
 
@@ -106,8 +91,46 @@
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
     <script src="bower_components/foundation/js/foundation/foundation.dropdown.js"></script>
-      <script src="bower_components/foundation/js/foundation/foundation.topbar.js"></script>
+    <script src="bower_components/foundation/js/foundation/foundation.topbar.js"></script>
+    <script src="js/foundation-datepicker.min.js"></script>
+
+    <script>
+			$(function () {
+				window.prettyPrint && prettyPrint();
+				$('#dp1').fdatepicker({
+					format: 'mm-dd-yyyy',
+					disableDblClickSelection: true
+				});
+				$('#dp-margin').fdatepicker();
+				$('#dpMonths').fdatepicker();
+
+				// implementation of disabled form fields
+				var nowTemp = new Date();
+				var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
+				var checkin = $('#dpd1').fdatepicker({
+					onRender: function (date) {
+						return date.valueOf() < now.valueOf() ? 'disabled' : '';
+					}
+				}).on('changeDate', function (ev) {
+					if (ev.date.valueOf() > checkout.date.valueOf()) {
+						var newDate = new Date(ev.date)
+						newDate.setDate(newDate.getDate() + 1);
+						checkout.update(newDate);
+					}
+					checkin.hide();
+					$('#dpd2')[0].focus();
+				}).data('datepicker');
+				var checkout = $('#dpd2').fdatepicker({
+					onRender: function (date) {
+						return date.valueOf() <= checkin.date.valueOf() ? 'disabled' : '';
+					}
+				}).on('changeDate', function (ev) {
+					checkout.hide();
+				}).data('datepicker');
+			});
+		</script>
     <script src="js/app.js"></script>
+
 
   </body>
 </html>

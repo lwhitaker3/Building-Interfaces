@@ -2,12 +2,12 @@
 @import "foundation";
 
 
-$maincolor:     #E06B7E;
-$dark:          #881F33;
-$secondary:     #3CA193;
-$lightgrey:     #C9C3C5;
+$maincolor:     #AF9FCC;
+$dark:          #565398;
+$secondary:     #A33170;
+$white:         #ffffff;
 $darkgrey:      #333333;
-$cursivetext:   'Great Vibes';
+$maintext:      'Karma';
 
 body{
   &.home{
@@ -21,116 +21,114 @@ body{
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  background-color: $lightgrey;
+  background-color: $white;
 }
 h1{
-  font-family: $cursivetext, cursive;
-  font-size: 8rem;
-  text-align: center;
+  font-family: $maintext, 'sans-serif';
+  font-size: 4rem;
   color: $dark;
-  line-height: 6rem;
-  &.first-line{
-    transform: translateX(-3rem) rotate(-7deg);
-    -ms-transform: translateX(-3rem) rotate(-7deg);
-    -webkit-transform: translateX(-3rem) rotate(-7deg);
-  }
-  &.second-line{
-    transform: translateX(3rem) rotate(-7deg);
-    -ms-transform: translateX(3rem) rotate(-7deg);
-    -webkit-transform: translateX(3rem) rotate(-7deg);
+  font-weight: bold;
+}
+@media #{$small-only}{
+  h1{
+    font-size: 3rem;
   }
 }
-p{
-  &.first-line{
-    transform: translateX(-3rem) rotate(-7deg);
-    -ms-transform: translateX(-3rem) rotate(-7deg);
-    -webkit-transform: translateX(-3rem) rotate(-7deg);
-  }
-  &.second-line{
-    transform: translateX(3rem) rotate(-7deg);
-    -ms-transform: translateX(3rem) rotate(-7deg);
-    -webkit-transform: translateX(3rem) rotate(-7deg);
-  }
-}
-.headertext{
-  font-size: 2rem;
-  font-family: $cursivetext;
-  padding: 2rem;
-  color: $lightgrey;
-}
-select{
-  border: none;
-}
-input{
-  border: none;
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
-}
+
+
 .top-bar{
-  height: 6rem;
+  height: 4.5rem;
   background-color: $maincolor;
-  margin-bottom: 2rem;
   .left{
     margin: 0;
     padding: 0;
     img{
-      height: 6rem;
-      padding: .5rem 1em;
+      height: 4.5rem;
+      padding: .5rem 1rem;
     }
   }
   .fa{
-    padding: 1.5rem 1rem;
-    color: $lightgrey;
+    padding: .75rem 1rem;
+    color: $white;
     &:hover{
-      color: darken( $lightgrey, 10% );
+      color: $dark;
     }
   }
+  .fa-2x{
+    font-size: 3rem;
+  }
 }
-a.button{
-  background-color: $maincolor;
-  padding: 1rem 3rem;
-  color: $lightgrey;
-  &:hover{
-    background-color: darken( $maincolor, 10% );
+@media #{$small-only} {
+  .top-bar{
+    height: 3rem;
+    .left{
+      img{
+        height: 3rem;
+        padding: .5rem 1rem;
+      }
+    }
+    .fa{
+      font-size: 2rem;
+      padding: .5rem 1rem;
+    }
   }
 }
 
-a.button.green_option{
+
+.reveal-modal{
+  background-color: $white;
+  color: $secondary;
+}
+
+a.button{
+  text-align: center;
+  background-color: $dark;
+  padding: 1rem 1rem;
+  color: $white;
+  &:hover{
+    background-color: $white;
+    color: $dark;
+  }
+  &.other_option{
     background-color: $secondary;
-    padding: 1rem 3rem;
+    padding: 1rem 1rem;
     &:hover{
-      background-color: darken( $secondary, 10% );
+      background-color: $maincolor;
+      color: $white;
     }
   }
+}
 
 
 .form{
+  margin-top: 2rem;
   .prefix{
     height: 4rem;
     padding: .5rem 0;
-    border-top: 2px $secondary solid;
-    border-left: 2px $secondary solid;
-    border-bottom: 2px $secondary solid;
+    border-top: 2px $dark solid;
+    border-left: 2px $dark solid;
+    border-bottom: 2px $dark solid;
     border-right: none;
-    background-color: rgba( $lightgrey, .6 );
-    color: $dark;
+    background-color: rgba( $maincolor, .8 );
+    color: $secondary;
   }
   input{
     height: 4rem;
-    border-top: 2px $secondary solid;
+    border-top: 2px $dark solid;
     border-left: none;
-    border-bottom: 2px $secondary solid;
-    border-right: 2px $secondary solid;
-    background-color: rgba( $lightgrey, .6 );
-    font-size: 2rem;
+    border-bottom: 2px $dark solid;
+    border-right: 2px $dark solid;
+    background-color: rgba( $maincolor, .8 );
+    font-size: 1.5rem;
     color: $darkgrey;
     &:focus {
       outline-color: transparent;
       outline-style: none;
-      border-top: 2px $secondary solid;
+      border-top: 2px $dark solid;
       border-left: none;
-      border-bottom: 2px $secondary solid;
-      border-right: 2px $secondary solid;
-      background-color: $lightgrey;
+      border-bottom: 2px $dark solid;
+      border-right: 2px $dark solid;
+      background-color: $maincolor;
     }
   }
   ::-webkit-input-placeholder {
@@ -147,12 +145,12 @@ a.button.green_option{
   }
   select{
     height: 4rem;
-    border-top: 2px $secondary solid;
+    border-top: 2px $dark solid;
     border-left: none;
-    border-bottom: 2px $secondary solid;
-    border-right: 2px $secondary solid;
-    background-color: rgba( $lightgrey, .6 );
-    font-size: 2rem;
+    border-bottom: 2px $dark solid;
+    border-right: 2px $dark solid;
+    background-color: rgba( $maincolor, .8 );
+    font-size: 1.5rem;
     color: $darkgrey;
     &:focus {
       outline-color: transparent;
@@ -160,77 +158,209 @@ a.button.green_option{
     }
   }
 }
+@media #{$small-only} {
+  .form{
+    input{
+      font-size: 1rem;
+    }
+    select{
+      font-size: 1rem;
+    }
+  }
+}
+
 .placeholder{
   color: $darkgrey;
 }
+
 .weather{
-  height: 6rem;
-  border: 2px $secondary solid;
-  background-color: rgba( $lightgrey, .6 );
-  margin-bottom: 30px;
-  padding-top: .5rem;
-  font-size: 2.75rem;
+  border: 2px $dark solid;
+  border-collapse: collapse;
+  background-color: rgba( $white, .6 );
   color: $darkgrey;
+  padding: 0;
+  margin-bottom: 1rem;
   &:hover{
-    background-color: $lightgrey;
-    border: 2px darken($secondary, 20%) solid;
-  }
-  span{
-    font-size: 1.25rem;
-  }
-  img{
-    height: 5rem;
-    padding-left: .5rem;
+    background-color: $white;
+    border: 2px darken($dark, 20%) solid;
   }
   a{
     color: $darkgrey;
   }
+  .weekday{
+    background-color: $maincolor;
+    margin: 0;
+    height: 2.5rem;
+    padding: .5rem 0;
+    h2{
+      color: $white;
+      font-size: 1.5rem;
+      line-height: 2rem;
+      text-align: left;
+      padding-left: 1rem;
+      margin: 0;
+    }
+  }
+  .weather_pic{
+    padding: .5rem 1rem;
+    img{
+      width: auto;
+      height: 3rem;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+  .temp{
+    color: $dark;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    padding: .25rem;
+    &.high{
+      color: $secondary;
+    }
+    p{
+      font-size: 2rem;
+      margin: 0;
+      line-height: 4rem;
+    }
+    span{
+      font-size: 1rem;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: normal;
+    }
+    .fa-arrow-up{
+      color: $secondary;
+    }
+    .fa-arrow-down{
+      color: $dark;
+    }
+  }
 }
-.space{
-  margin-bottom: 1rem;
+@media #{$medium-up} {
+  .weather{
+    .temp{
+      padding: .25rem;
+      p{
+        font-size: 2.75rem;
+      }
+      span{
+        font-size: 1.5rem;
+      }
+    }
+}
+
+}
+@media #{$large-up} {
+  .weather{
+    .weekday{
+      margin: 0;
+      height: 4rem;
+      padding: 1rem 0;
+      h2{
+        text-align: center;
+        padding: 0;
+      }
+    }
+    .weather_pic{
+      padding: 1.5rem 1rem;
+      img{
+        width: 100%;
+        height: auto;
+      }
+    }
+    .temp{
+      height: 5rem;
+      padding: 0 1rem;
+    }
+  }
+}
+.margin{
+  margin-top: 2rem;
+}
+
+.wrapper{
+  margin: 2rem 0;
+}
+.weather_statement{
+  position: relative;
+  background-color: $maincolor;
+  border-top: 2px $dark solid;
+  border-left: 2px $dark solid;
+  border-right: 2px $dark solid;
+  padding: .5rem;
+  color: $white;
+  margin-top: 2rem;
+  p{
+    font-size: 2rem;
+    margin: 0;
+    line-height: 1.2;
+  }
+  span{
+    color: $secondary;
+  }
+}
+
+@media #{$small-only}{
+  .weather_statement{
+    p{
+      font-size: 1.5rem;
+    }
+  }
 }
 
 .weather_info{
   position: relative;
-  height: 6rem;
-  border: 2px $secondary solid;
-  background-color: $secondary;
+  background-color: $maincolor;
+  border-left: 2px $dark solid;
+  border-right: 2px $dark solid;
   padding-top: .5rem;
-  font-size: 2.75rem;
-  color: $lightgrey;
+  color: $white;
   text-align: center;
+  padding: .5rem .5rem 1rem;
   span{
     font-size: 1.25rem;
   }
   img{
-    height: 5rem;
-    padding-left: .5rem;
+    width: 50%;
+    height: auto;
+  }
+  p{
+    font-size: 2.75rem;
+    margin: 0;
   }
 }
-.weather_statement{
-  position: relative;
-  border: 2px $secondary solid;
-  background-color: $secondary;
-  padding: .5rem;
-  font-size: 1rem;
-  color: $lightgrey;
+
+@media #{$small-only}{
+  .weather_info{
+    img{
+      width: 75%;
+      height: auto;
+    }
+    span{
+      font-size: .75rem;
+    }
+    p{
+      font-size: 1.75rem;
+    }
+  }
 }
+
 .suggestion{
   position: relative;
-  border: 2px $secondary solid;
-  background-color: rgba( $lightgrey, .6 );
+  border-bottom: 2px $dark solid;
+  border-left: 2px $dark solid;
+  border-right: 2px $dark solid;
+  background-color: rgba( $white, .6 );
   padding: 1rem;
   font-size: 2.75rem;
+  line-height: 1.2;
   color: $darkgrey;
   text-align: center;
 }
-.hero_image{
-  height: 10rem;
-  background-image: url('../img/hands.jpg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  margin: 0;
-  padding: 0;
-  background-color: $lightgrey;
+@media #{$small-only}{
+  .suggestion{
+    font-size: 2rem;
+  }
 }

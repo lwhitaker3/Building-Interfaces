@@ -9445,7 +9445,7 @@ body {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  background-color: #C9C3C5;
+  background-color: #ffffff;
 }
 /* line 13, ../scss/app.scss */
 body.home {
@@ -9459,260 +9459,394 @@ body.weather_page {
 
 /* line 26, ../scss/app.scss */
 h1 {
-  font-family: "Great Vibes", cursive;
-  font-size: 8rem;
-  text-align: center;
-  color: #881F33;
-  line-height: 6rem;
-}
-/* line 32, ../scss/app.scss */
-h1.first-line {
-  transform: translateX(-3rem) rotate(-7deg);
-  -ms-transform: translateX(-3rem) rotate(-7deg);
-  -webkit-transform: translateX(-3rem) rotate(-7deg);
-}
-/* line 37, ../scss/app.scss */
-h1.second-line {
-  transform: translateX(3rem) rotate(-7deg);
-  -ms-transform: translateX(3rem) rotate(-7deg);
-  -webkit-transform: translateX(3rem) rotate(-7deg);
+  font-family: "Karma", "sans-serif";
+  font-size: 4rem;
+  color: #565398;
+  font-weight: bold;
 }
 
-/* line 44, ../scss/app.scss */
-p.first-line {
-  transform: translateX(-3rem) rotate(-7deg);
-  -ms-transform: translateX(-3rem) rotate(-7deg);
-  -webkit-transform: translateX(-3rem) rotate(-7deg);
+@media only screen and (max-width: 40em) {
+  /* line 33, ../scss/app.scss */
+  h1 {
+    font-size: 3rem;
+  }
 }
-/* line 49, ../scss/app.scss */
-p.second-line {
-  transform: translateX(3rem) rotate(-7deg);
-  -ms-transform: translateX(3rem) rotate(-7deg);
-  -webkit-transform: translateX(3rem) rotate(-7deg);
-}
-
-/* line 55, ../scss/app.scss */
-.headertext {
-  font-size: 2rem;
-  font-family: "Great Vibes";
-  padding: 2rem;
-  color: #C9C3C5;
-}
-
-/* line 61, ../scss/app.scss */
-select {
-  border: none;
-}
-
-/* line 64, ../scss/app.scss */
-input {
-  border: none;
-  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
-}
-
-/* line 68, ../scss/app.scss */
+/* line 39, ../scss/app.scss */
 .top-bar {
-  height: 6rem;
-  background-color: #E06B7E;
-  margin-bottom: 2rem;
+  height: 4.5rem;
+  background-color: #AF9FCC;
 }
-/* line 72, ../scss/app.scss */
+/* line 42, ../scss/app.scss */
 .top-bar .left {
   margin: 0;
   padding: 0;
 }
-/* line 75, ../scss/app.scss */
+/* line 45, ../scss/app.scss */
 .top-bar .left img {
-  height: 6rem;
-  padding: .5rem 1em;
+  height: 4.5rem;
+  padding: .5rem 1rem;
 }
-/* line 80, ../scss/app.scss */
+/* line 50, ../scss/app.scss */
 .top-bar .fa {
-  padding: 1.5rem 1rem;
-  color: #C9C3C5;
+  padding: .75rem 1rem;
+  color: #ffffff;
 }
-/* line 83, ../scss/app.scss */
+/* line 53, ../scss/app.scss */
 .top-bar .fa:hover {
-  color: #b1a8ab;
+  color: #565398;
+}
+/* line 57, ../scss/app.scss */
+.top-bar .fa-2x {
+  font-size: 3rem;
 }
 
-/* line 88, ../scss/app.scss */
+@media only screen and (max-width: 40em) {
+  /* line 62, ../scss/app.scss */
+  .top-bar {
+    height: 3rem;
+  }
+  /* line 65, ../scss/app.scss */
+  .top-bar .left img {
+    height: 3rem;
+    padding: .5rem 1rem;
+  }
+  /* line 70, ../scss/app.scss */
+  .top-bar .fa {
+    font-size: 2rem;
+    padding: .5rem 1rem;
+  }
+}
+/* line 78, ../scss/app.scss */
+.reveal-modal {
+  background-color: #ffffff;
+  color: #A33170;
+}
+
+/* line 83, ../scss/app.scss */
 a.button {
-  background-color: #E06B7E;
-  padding: 1rem 3rem;
-  color: #C9C3C5;
+  text-align: center;
+  background-color: #565398;
+  padding: 1rem 1rem;
+  color: #ffffff;
+}
+/* line 88, ../scss/app.scss */
+a.button:hover {
+  background-color: #ffffff;
+  color: #565398;
 }
 /* line 92, ../scss/app.scss */
-a.button:hover {
-  background-color: #d74159;
+a.button.other_option {
+  background-color: #A33170;
+  padding: 1rem 1rem;
+}
+/* line 95, ../scss/app.scss */
+a.button.other_option:hover {
+  background-color: #AF9FCC;
+  color: #ffffff;
 }
 
-/* line 97, ../scss/app.scss */
-a.button.green_option {
-  background-color: #3CA193;
-  padding: 1rem 3rem;
+/* line 103, ../scss/app.scss */
+.form {
+  margin-top: 2rem;
 }
-/* line 100, ../scss/app.scss */
-a.button.green_option:hover {
-  background-color: #2e7c71;
-}
-
-/* line 107, ../scss/app.scss */
+/* line 105, ../scss/app.scss */
 .form .prefix {
   height: 4rem;
   padding: .5rem 0;
-  border-top: 2px #3CA193 solid;
-  border-left: 2px #3CA193 solid;
-  border-bottom: 2px #3CA193 solid;
+  border-top: 2px #565398 solid;
+  border-left: 2px #565398 solid;
+  border-bottom: 2px #565398 solid;
   border-right: none;
-  background-color: rgba(201, 195, 197, 0.6);
-  color: #881F33;
+  background-color: rgba(175, 159, 204, 0.8);
+  color: #A33170;
 }
-/* line 117, ../scss/app.scss */
+/* line 115, ../scss/app.scss */
 .form input {
   height: 4rem;
-  border-top: 2px #3CA193 solid;
+  border-top: 2px #565398 solid;
   border-left: none;
-  border-bottom: 2px #3CA193 solid;
-  border-right: 2px #3CA193 solid;
-  background-color: rgba(201, 195, 197, 0.6);
-  font-size: 2rem;
+  border-bottom: 2px #565398 solid;
+  border-right: 2px #565398 solid;
+  background-color: rgba(175, 159, 204, 0.8);
+  font-size: 1.5rem;
   color: #333333;
 }
-/* line 126, ../scss/app.scss */
+/* line 124, ../scss/app.scss */
 .form input:focus {
   outline-color: transparent;
   outline-style: none;
-  border-top: 2px #3CA193 solid;
+  border-top: 2px #565398 solid;
   border-left: none;
-  border-bottom: 2px #3CA193 solid;
-  border-right: 2px #3CA193 solid;
-  background-color: #C9C3C5;
+  border-bottom: 2px #565398 solid;
+  border-right: 2px #565398 solid;
+  background-color: #AF9FCC;
 }
-/* line 136, ../scss/app.scss */
+/* line 134, ../scss/app.scss */
 .form ::-webkit-input-placeholder {
   color: #333333;
 }
-/* line 139, ../scss/app.scss */
+/* line 137, ../scss/app.scss */
 .form ::-moz-placeholder {
   /* Firefox 19+ */
   color: #333333;
 }
-/* line 142, ../scss/app.scss */
+/* line 140, ../scss/app.scss */
 .form :-ms-input-placeholder {
   color: #333333;
 }
-/* line 145, ../scss/app.scss */
+/* line 143, ../scss/app.scss */
 .form :-moz-placeholder {
   /* Firefox 18- */
   color: #333333;
 }
-/* line 148, ../scss/app.scss */
+/* line 146, ../scss/app.scss */
 .form select {
   height: 4rem;
-  border-top: 2px #3CA193 solid;
+  border-top: 2px #565398 solid;
   border-left: none;
-  border-bottom: 2px #3CA193 solid;
-  border-right: 2px #3CA193 solid;
-  background-color: rgba(201, 195, 197, 0.6);
-  font-size: 2rem;
+  border-bottom: 2px #565398 solid;
+  border-right: 2px #565398 solid;
+  background-color: rgba(175, 159, 204, 0.8);
+  font-size: 1.5rem;
   color: #333333;
 }
-/* line 157, ../scss/app.scss */
+/* line 155, ../scss/app.scss */
 .form select:focus {
   outline-color: transparent;
   outline-style: none;
 }
 
-/* line 163, ../scss/app.scss */
+@media only screen and (max-width: 40em) {
+  /* line 163, ../scss/app.scss */
+  .form input {
+    font-size: 1rem;
+  }
+  /* line 166, ../scss/app.scss */
+  .form select {
+    font-size: 1rem;
+  }
+}
+/* line 172, ../scss/app.scss */
 .placeholder {
   color: #333333;
 }
 
-/* line 166, ../scss/app.scss */
+/* line 176, ../scss/app.scss */
 .weather {
-  height: 6rem;
-  border: 2px #3CA193 solid;
-  background-color: rgba(201, 195, 197, 0.6);
-  margin-bottom: 30px;
-  padding-top: .5rem;
-  font-size: 2.75rem;
+  border: 2px #565398 solid;
+  border-collapse: collapse;
+  background-color: rgba(255, 255, 255, 0.6);
   color: #333333;
+  padding: 0;
+  margin-bottom: 1rem;
 }
-/* line 174, ../scss/app.scss */
+/* line 183, ../scss/app.scss */
 .weather:hover {
-  background-color: #C9C3C5;
-  border: 2px #20574f solid;
+  background-color: #ffffff;
+  border: 2px #312f56 solid;
 }
-/* line 178, ../scss/app.scss */
-.weather span {
-  font-size: 1.25rem;
-}
-/* line 181, ../scss/app.scss */
-.weather img {
-  height: 5rem;
-  padding-left: .5rem;
-}
-/* line 185, ../scss/app.scss */
+/* line 187, ../scss/app.scss */
 .weather a {
   color: #333333;
 }
-
-/* line 189, ../scss/app.scss */
-.space {
-  margin-bottom: 1rem;
+/* line 190, ../scss/app.scss */
+.weather .weekday {
+  background-color: #AF9FCC;
+  margin: 0;
+  height: 2.5rem;
+  padding: .5rem 0;
+}
+/* line 195, ../scss/app.scss */
+.weather .weekday h2 {
+  color: #ffffff;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-align: left;
+  padding-left: 1rem;
+  margin: 0;
+}
+/* line 204, ../scss/app.scss */
+.weather .weather_pic {
+  padding: .5rem 1rem;
+}
+/* line 206, ../scss/app.scss */
+.weather .weather_pic img {
+  width: auto;
+  height: 3rem;
+  display: block;
+  margin: 0 auto;
+}
+/* line 213, ../scss/app.scss */
+.weather .temp {
+  color: #565398;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+  padding: .25rem;
+}
+/* line 219, ../scss/app.scss */
+.weather .temp.high {
+  color: #A33170;
+}
+/* line 222, ../scss/app.scss */
+.weather .temp p {
+  font-size: 2rem;
+  margin: 0;
+  line-height: 4rem;
+}
+/* line 227, ../scss/app.scss */
+.weather .temp span {
+  font-size: 1rem;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: normal;
+}
+/* line 233, ../scss/app.scss */
+.weather .temp .fa-arrow-up {
+  color: #A33170;
+}
+/* line 236, ../scss/app.scss */
+.weather .temp .fa-arrow-down {
+  color: #565398;
 }
 
-/* line 193, ../scss/app.scss */
+@media only screen and (min-width: 40.0625em) {
+  /* line 243, ../scss/app.scss */
+  .weather .temp {
+    padding: .25rem;
+  }
+  /* line 245, ../scss/app.scss */
+  .weather .temp p {
+    font-size: 2.75rem;
+  }
+  /* line 248, ../scss/app.scss */
+  .weather .temp span {
+    font-size: 1.5rem;
+  }
+}
+@media only screen and (min-width: 64.0625em) {
+  /* line 257, ../scss/app.scss */
+  .weather .weekday {
+    margin: 0;
+    height: 4rem;
+    padding: 1rem 0;
+  }
+  /* line 261, ../scss/app.scss */
+  .weather .weekday h2 {
+    text-align: center;
+    padding: 0;
+  }
+  /* line 266, ../scss/app.scss */
+  .weather .weather_pic {
+    padding: 1.5rem 1rem;
+  }
+  /* line 268, ../scss/app.scss */
+  .weather .weather_pic img {
+    width: 100%;
+    height: auto;
+  }
+  /* line 273, ../scss/app.scss */
+  .weather .temp {
+    height: 5rem;
+    padding: 0 1rem;
+  }
+}
+/* line 279, ../scss/app.scss */
+.margin {
+  margin-top: 2rem;
+}
+
+/* line 283, ../scss/app.scss */
+.wrapper {
+  margin: 2rem 0;
+}
+
+/* line 286, ../scss/app.scss */
+.weather_statement {
+  position: relative;
+  background-color: #AF9FCC;
+  border-top: 2px #565398 solid;
+  border-left: 2px #565398 solid;
+  border-right: 2px #565398 solid;
+  padding: .5rem;
+  color: #ffffff;
+  margin-top: 2rem;
+}
+/* line 295, ../scss/app.scss */
+.weather_statement p {
+  font-size: 2rem;
+  margin: 0;
+  line-height: 1.2;
+}
+/* line 300, ../scss/app.scss */
+.weather_statement span {
+  color: #A33170;
+}
+
+@media only screen and (max-width: 40em) {
+  /* line 307, ../scss/app.scss */
+  .weather_statement p {
+    font-size: 1.5rem;
+  }
+}
+/* line 313, ../scss/app.scss */
 .weather_info {
   position: relative;
-  height: 6rem;
-  border: 2px #3CA193 solid;
-  background-color: #3CA193;
+  background-color: #AF9FCC;
+  border-left: 2px #565398 solid;
+  border-right: 2px #565398 solid;
   padding-top: .5rem;
-  font-size: 2.75rem;
-  color: #C9C3C5;
+  color: #ffffff;
   text-align: center;
+  padding: .5rem .5rem 1rem;
 }
-/* line 202, ../scss/app.scss */
+/* line 322, ../scss/app.scss */
 .weather_info span {
   font-size: 1.25rem;
 }
-/* line 205, ../scss/app.scss */
+/* line 325, ../scss/app.scss */
 .weather_info img {
-  height: 5rem;
-  padding-left: .5rem;
+  width: 50%;
+  height: auto;
+}
+/* line 329, ../scss/app.scss */
+.weather_info p {
+  font-size: 2.75rem;
+  margin: 0;
 }
 
-/* line 210, ../scss/app.scss */
-.weather_statement {
-  position: relative;
-  border: 2px #3CA193 solid;
-  background-color: #3CA193;
-  padding: .5rem;
-  font-size: 1rem;
-  color: #C9C3C5;
+@media only screen and (max-width: 40em) {
+  /* line 337, ../scss/app.scss */
+  .weather_info img {
+    width: 75%;
+    height: auto;
+  }
+  /* line 341, ../scss/app.scss */
+  .weather_info span {
+    font-size: .75rem;
+  }
+  /* line 344, ../scss/app.scss */
+  .weather_info p {
+    font-size: 1.75rem;
+  }
 }
-
-/* line 218, ../scss/app.scss */
+/* line 350, ../scss/app.scss */
 .suggestion {
   position: relative;
-  border: 2px #3CA193 solid;
-  background-color: rgba(201, 195, 197, 0.6);
+  border-bottom: 2px #565398 solid;
+  border-left: 2px #565398 solid;
+  border-right: 2px #565398 solid;
+  background-color: rgba(255, 255, 255, 0.6);
   padding: 1rem;
   font-size: 2.75rem;
+  line-height: 1.2;
   color: #333333;
   text-align: center;
 }
 
-/* line 227, ../scss/app.scss */
-.hero_image {
-  height: 10rem;
-  background-image: url("../img/hands.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  margin: 0;
-  padding: 0;
-  background-color: #C9C3C5;
+@media only screen and (max-width: 40em) {
+  /* line 363, ../scss/app.scss */
+  .suggestion {
+    font-size: 2rem;
+  }
 }

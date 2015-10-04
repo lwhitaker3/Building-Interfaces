@@ -7,42 +7,27 @@
     <link rel="stylesheet" href="stylesheets/app.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link href='https://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Karma' rel='stylesheet' type='text/css'>
 
   </head>
-  <body>
+  <body class="weather_page">
     <nav class="top-bar" data-topbar role="navigation">
       <ul class="left">
-        <li><img src="img/logo.png" alt="main image"></li>
+        <li><a href="index.html"><img src="img/logo.png" alt="main image"></a></li>
       </ul>
-
-      <ul class="right">
-        <li><a href="index.html"><i class="fa fa-home fa-3x"></i></a></li>
-      </ul>
-
-      <ul class="left">
-        <li><p class="headertext">Perfect Date</p></li>
-      </ul>
-
     </nav>
 
-    <div class="space">
-      <div class="row">
-        <div class="medium-8 small-10 small-centered columns">
-          <div class="row hero_image collapse">
-          </div>
-        </div>
-      </div>
 
+    <div class="wrapper">
       <div class="row">
         <div class="medium-8 small-10 small-centered columns">
           <div class="row weather_statement collapse">
-            <div class="small-12 columns"><p>On DATE in PLACE the weather looks like:</p></div>
+            <div class="small-12 columns"><p>On <span>DATE</span> in <span>PLACE</span> the weather is:</p></div>
           </div>
           <div class="row weather_info collapse">
-            <div class="small-4 columns"><img src='img/thunder.png' alt='thunder'></div>
-            <div class="small-4 columns"><i class="fa fa-arrow-up"></i> 90<span>&#8457; </span></div>
-            <div class="small-4 columns"><i class="fa fa-arrow-down"></i> 90<span>&#8457; </span></div>
+            <div class="small-4 columns"><img src='img/rain.png' alt='thunder'></div>
+            <div class="small-4 columns"><p><span><i class="fa fa-arrow-up"></i></span> 90<span>&#8457; </span></p></div>
+            <div class="small-4 columns"><p><span><i class="fa fa-arrow-down"></i></span> 90<span>&#8457; </span></p></div>
           </div>
         </div>
       </div>
@@ -54,17 +39,18 @@
           </div>
         </div>
       </div>
+
     </div>
 
     <div class="row">
       <div class="medium-8 small-10 small-centered columns">
-        <a href="date_idea.html" class="button right small-6"></i>Get Another Idea</a>
+        <a href="date_idea.html" class="button other_option right small-6"></i>Another Idea</a>
       </div>
     </div>
 
     <div class="row">
       <div class="medium-8 small-10 small-centered columns">
-        <a href="weather.html" class="button green_option right small-6">Change the Day</i></a>
+        <a href="weather.html" class="button other_option right small-6">Change the Day</i></a>
       </div>
     </div>
 
