@@ -55,7 +55,7 @@ h1{
     }
   }
   .fa-2x{
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }
 @media #{$small-only} {
@@ -362,5 +362,16 @@ a.button{
 @media #{$small-only}{
   .suggestion{
     font-size: 2rem;
+  }
+}
+
+.load{
+  background-color: $dark;
+  overflow: hidden;
+  h1{
+    text-align: center;
+    font-family: $maintext;
+    color: $white;
+    font-size: 3rem;
   }
 }
