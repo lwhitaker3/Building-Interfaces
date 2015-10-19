@@ -1,0 +1,225 @@
+@import "settings";
+@import "foundation";
+
+$serif_font: 'Droid Serif', serif;
+$sans_serif: 'Droid Sans', sans-serif;
+
+$red: #701616;
+$lightred: #8e4949;
+$blue: #0e2647;
+$lightblue: #3e5a7c;
+$grey: #7f7f7f;
+$lightgrey: #dedddd;
+$darkgrey:  #262626;
+
+
+body{
+  font-size: 16px;
+  background-color: $lightgrey;
+}
+.row{
+  background-color: white;
+}
+h2{
+  font-family: $serif_font;
+  color: $blue;
+  font-size: 2rem;
+  margin: 50px 0 30px 0;
+}
+h3{
+  font-family: $sans_serif;
+  color: $darkgrey;
+  font-size: 1.5rem;
+}
+
+.title{
+  h1{
+    font-family: $serif_font;
+    color: $blue;
+    font-size: 6rem;
+    text-align: center;
+    width: 95%;
+    display: block;
+    margin: 60px auto 40px auto;
+    span{
+      color: $red;
+    }
+  }
+}
+
+.presidents{
+  height: 400px;
+  background-image: url("../img/presidents.png");
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#header{
+  background-color: $grey;
+  p{
+    margin: 0;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 2rem;
+    font-family: $sans-serif;
+    color: $darkgrey;
+  }
+  img{
+    height: 2rem;
+    margin-bottom: .5rem;
+  }
+}
+
+.row.navigation{
+    padding-bottom: 50px;
+}
+.sub-nav{
+  color: $grey;
+  text-align: center;
+  dd{
+    display: inline-block;
+    float: none;
+    margin: auto;
+    a{
+      color: $darkgrey;
+      font-family: $sans-serif;
+      font-size: 1.25rem;
+    }
+    &.active a{
+      color: $darkgrey;
+      background-color: $lightgrey;
+      &:hover{
+        background: darken($lightgrey, 20%);;
+      }
+    }
+  }
+}
+.articles{
+  border-color: $grey;
+  background: $lightgrey;
+}
+.in_article{
+  background: $lightgrey;
+}
+.margins{
+  margin-top: 50px;
+}
+
+.range-slider-handle{
+  background: $darkgrey;
+}
+
+
+
+
+h1{
+  -webkit-animation: fadein 2s;
+     -moz-animation: fadein 2s;
+      -ms-animation: fadein 2s;
+       -o-animation: fadein 2s;
+          animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+#obama{
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -100px;
+  &.fly_in{
+    opacity: 1;
+    top: 0px;
+    left: 0px;
+    transition: all 1s ease-in;
+  }
+}
+
+#debate{
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: -100px;
+  &.fly_in{
+    opacity: 1;
+    top: 0px;
+    left: 0px;
+    transition: all 1s ease-in;
+  }
+}
+
+
+//http://codepen.io/seanmccaffery/pen/waxkj
+.wrapper {
+	height: 229px;
+	margin: 0 auto;
+	position: relative;
+  width: 330px;
+  opacity: 0;
+}
+.wrapper.fly_in{
+  opacity: 1;
+  transition: all 1s ease-in;
+}
+.slider_pic{
+  width: 330px;
+  height: 229px;
+  max-width: none;
+  display: block;
+
+}
+.then, .now {
+  position: absolute;
+}
+
+.then {
+	overflow: hidden;
+  z-index: 2;
+}
+
+
+// Or selectively include components
+// @import
+//   "foundation/components/accordion",
+//   "foundation/components/alert-boxes",
+//   "foundation/components/block-grid",
+//   "foundation/components/breadcrumbs",
+//   "foundation/components/button-groups",
+//   "foundation/components/buttons",
+//   "foundation/components/clearing",
+//   "foundation/components/dropdown",
+//   "foundation/components/dropdown-buttons",
+//   "foundation/components/flex-video",
+//   "foundation/components/forms",
+//   "foundation/components/grid",
+//   "foundation/components/inline-lists",
+//   "foundation/components/joyride",
+//   "foundation/components/keystrokes",
+//   "foundation/components/labels",
+//   "foundation/components/magellan",
+//   "foundation/components/orbit",
+//   "foundation/components/pagination",
+//   "foundation/components/panels",
+//   "foundation/components/pricing-tables",
+//   "foundation/components/progress-bars",
+//   "foundation/components/reveal",
+//   "foundation/components/side-nav",
+//   "foundation/components/split-buttons",
+//   "foundation/components/sub-nav",
+//   "foundation/components/switches",
+//   "foundation/components/tables",
+//   "foundation/components/tabs",
+//   "foundation/components/thumbs",
+//   "foundation/components/tooltips",
+//   "foundation/components/top-bar",
+//   "foundation/components/type",
+//   "foundation/components/offcanvas",
+//   "foundation/components/visibility";
