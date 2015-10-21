@@ -8,22 +8,23 @@
     <link rel="stylesheet" href="stylesheets/foundation-datepicker.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Karma' rel='stylesheet' type='text/css'>
 </head>
   <body class="home">
     <nav class="top-bar" data-topbar role="navigation">
       <ul class="left">
-        <li><img src="img/logo.png" alt="main image"></li>
+        <li><img src="img/logo-01.png" alt="main image"></li>
       </ul>
 
+
       <ul class="right">
-        <li><a href="#"  data-reveal-id="myModal"><i class="fa fa-info fa-2x"></i></a></li>
+        <li><a href="#"  data-reveal-id="myModal"><img class="info" src="img/info.png" alt="info"></a></li>
+
 
       </ul>
 
     </nav>
-
     <div id="myModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
       <h1 id="modalTitle">About Perfect Date</h1>
       <p class="lead">Plan your perfect date based on the weather</p>
@@ -31,12 +32,15 @@
       <a class="close-reveal-modal" aria-label="Close">&#215;</a>
     </div>
 
+
     <div class="form">
+
       <div class="row">
         <div class="medium-8 small-10 small-centered columns">
+          <p>Plan your perfect date based on the weather</p>
           <div class="row collapse">
             <div class="small-3 large-2 columns">
-              <span class="prefix"><i class="fa fa-map-marker fa-3x"></i></span>
+              <span class="prefix"><img src="img/location.png" alt="location"></span>
             </div>
             <div class="small-9 large-10 columns">
               <input type="text" placeholder="Enter your zip code">
@@ -44,7 +48,7 @@
           </div>
           <div class="row collapse">
             <div class="small-3 large-2 columns">
-              <span class="prefix"><i class="fa fa-calendar-o fa-3x"></i></span>
+              <span class="prefix"><img src="img/calendar.png" alt="day"></span>
             </div>
             <div class="small-9 large-10 columns">
               <input type="text" class="span2" value="09-16-2015" id="dp1">
@@ -52,7 +56,7 @@
           </div>
           <div class="row collapse">
             <div class="small-3 large-2 columns">
-              <span class="prefix"><i class="fa fa-clock-o fa-3x"></i></span>
+              <span class="prefix"><img src="img/time.png" alt="time"></span>
             </div>
             <div class="small-9 large-10 columns">
               <select>
@@ -64,20 +68,16 @@
           </div>
           <div class="row collapse">
             <div class="small-3 large-2 columns">
-              <span class="prefix"><i class="fa fa-question fa-3x"></i></span>
+              <span class="prefix"><img src="img/rose.png" alt="rose"></span>
             </div>
             <div class="small-9 large-10 columns">
               <select>
-                <option value="category1">Category 1</option>
-                <option value="category1">Category 2</option>
-                <option value="category1">Category 3</option>
-                <option value="category1">Category 4</option>
-                <option value="category1">Category 5</option>
-                <option value="category1">Category 6</option>
+                <option value="category1">First Date</option>
+                <option value="category1">Food Date</option>
               </select>
             </div>
           </div>
-          <a href="date_idea.html" class="button right small-4"><i class="fa fa-arrow-right fa-2x"></i></a>
+          <a href="date_idea.html" class="button right"><img class="arrow" src="img/arrow.png" alt="arrow"></a>
         </div>
 
 

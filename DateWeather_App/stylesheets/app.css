@@ -4035,7 +4035,7 @@ label.right {
 /* line 395, ../bower_components/foundation/scss/foundation/components/_forms.scss */
 label.inline {
   margin: 0 0 1rem 0;
-  padding: 0.5rem 0;
+  padding: 0.5625rem 0;
 }
 /* line 397, ../bower_components/foundation/scss/foundation/components/_forms.scss */
 label small {
@@ -4138,9 +4138,9 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
   border-radius: 0;
   background-color: #FFFFFF;
   border-style: solid;
-  border-width: 0;
+  border-width: 1px;
   border-color: #cccccc;
-  box-shadow: none;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
   color: rgba(0, 0, 0, 0.75);
   display: block;
   font-family: inherit;
@@ -4308,7 +4308,7 @@ select {
   background-position: 100% center;
   background-repeat: no-repeat;
   border-style: solid;
-  border-width: 0;
+  border-width: 1px;
   border-color: #cccccc;
   color: rgba(0, 0, 0, 0.75);
   font-family: inherit;
@@ -9439,7 +9439,7 @@ th.hide-for-touch {
     display: none !important;
   }
 }
-/* line 12, ../scss/app.scss */
+/* line 14, ../scss/app.scss */
 body {
   background-repeat: no-repeat;
   background-position: center;
@@ -9447,418 +9447,532 @@ body {
   background-attachment: fixed;
   background-color: #ffffff;
 }
-/* line 13, ../scss/app.scss */
+/* line 15, ../scss/app.scss */
 body.home {
-  background-image: url("../img/main_photo.jpg");
+  background-image: url("../img/main_photo1.png");
 }
-/* line 16, ../scss/app.scss */
+/* line 18, ../scss/app.scss */
 body.weather_page {
-  background-image: url("../img/weather_photo.jpg");
-  background-position: bottom;
+  background-image: url("../img/roses.png");
+  background-position: center;
 }
 
-/* line 26, ../scss/app.scss */
+/* line 28, ../scss/app.scss */
 h1 {
   font-family: "Karma", "sans-serif";
   font-size: 4rem;
-  color: #565398;
+  color: #33001E;
   font-weight: bold;
 }
 
 @media only screen and (max-width: 40em) {
-  /* line 33, ../scss/app.scss */
+  /* line 35, ../scss/app.scss */
   h1 {
     font-size: 3rem;
   }
 }
-/* line 39, ../scss/app.scss */
+/* line 41, ../scss/app.scss */
 .top-bar {
   height: 4.5rem;
-  background-color: #AF9FCC;
+  background-color: #A80659;
 }
-/* line 42, ../scss/app.scss */
+/* line 44, ../scss/app.scss */
 .top-bar .left {
   margin: 0;
   padding: 0;
 }
-/* line 45, ../scss/app.scss */
+/* line 47, ../scss/app.scss */
 .top-bar .left img {
   height: 4.5rem;
   padding: .5rem 1rem;
 }
-/* line 50, ../scss/app.scss */
-.top-bar .fa {
-  padding: .75rem 1rem;
-  color: #ffffff;
-}
-/* line 53, ../scss/app.scss */
-.top-bar .fa:hover {
-  color: #565398;
-}
-/* line 57, ../scss/app.scss */
-.top-bar .fa-2x {
-  font-size: 2rem;
+/* line 52, ../scss/app.scss */
+.top-bar .info {
+  height: 4.5rem;
+  padding: 1.25rem 1rem;
 }
 
 @media only screen and (max-width: 40em) {
-  /* line 62, ../scss/app.scss */
+  /* line 58, ../scss/app.scss */
   .top-bar {
     height: 3rem;
   }
-  /* line 65, ../scss/app.scss */
+  /* line 61, ../scss/app.scss */
   .top-bar .left img {
     height: 3rem;
     padding: .5rem 1rem;
   }
-  /* line 70, ../scss/app.scss */
-  .top-bar .fa {
-    font-size: 2rem;
-    padding: .5rem 1rem;
+  /* line 66, ../scss/app.scss */
+  .top-bar .info {
+    height: 3rem;
+    padding: 1rem 1rem;
   }
 }
-/* line 78, ../scss/app.scss */
+/* line 74, ../scss/app.scss */
 .reveal-modal {
   background-color: #ffffff;
-  color: #A33170;
+  color: #333333;
+}
+/* line 77, ../scss/app.scss */
+.reveal-modal p {
+  font-family: "Open-Sans", sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: #33001E;
 }
 
-/* line 83, ../scss/app.scss */
+/* line 86, ../scss/app.scss */
 a.button {
   text-align: center;
-  background-color: #565398;
-  padding: 1rem 1rem;
+  background-color: #A80659;
+  padding: .5rem 3rem;
   color: #ffffff;
 }
-/* line 88, ../scss/app.scss */
+/* line 91, ../scss/app.scss */
 a.button:hover {
-  background-color: #ffffff;
-  color: #565398;
-}
-/* line 92, ../scss/app.scss */
-a.button.other_option {
-  background-color: #A33170;
-  padding: 1rem 1rem;
-}
-/* line 95, ../scss/app.scss */
-a.button.other_option:hover {
-  background-color: #AF9FCC;
-  color: #ffffff;
+  background-color: #77043f;
+  color: #33001E;
 }
 
-/* line 103, ../scss/app.scss */
+/* line 97, ../scss/app.scss */
 .form {
   margin-top: 2rem;
+}
+/* line 99, ../scss/app.scss */
+.form p {
+  font-family: "Open-Sans", sans-serif;
+  font-weight: 300;
+  font-size: 1.5rem;
+  color: #33001E;
 }
 /* line 105, ../scss/app.scss */
 .form .prefix {
   height: 4rem;
   padding: .5rem 0;
-  border-top: 2px #565398 solid;
-  border-left: 2px #565398 solid;
-  border-bottom: 2px #565398 solid;
+  border: #8c8c8c 1px solid;
   border-right: none;
-  background-color: rgba(175, 159, 204, 0.8);
-  color: #A33170;
+  background-color: #595959;
+  color: #ffffff;
 }
-/* line 115, ../scss/app.scss */
+/* line 112, ../scss/app.scss */
+.form .prefix img {
+  height: 3rem;
+}
+/* line 116, ../scss/app.scss */
 .form input {
   height: 4rem;
-  border-top: 2px #565398 solid;
+  border: #8c8c8c 1px solid;
   border-left: none;
-  border-bottom: 2px #565398 solid;
-  border-right: 2px #565398 solid;
-  background-color: rgba(175, 159, 204, 0.8);
+  background-color: rgba(89, 89, 89, 0.8);
   font-size: 1.5rem;
-  color: #333333;
+  color: #ffffff;
+  font-family: "Open-Sans", sans-serif;
+  font-weight: 300;
 }
-/* line 124, ../scss/app.scss */
+/* line 125, ../scss/app.scss */
 .form input:focus {
-  outline-color: transparent;
-  outline-style: none;
-  border-top: 2px #565398 solid;
-  border-left: none;
-  border-bottom: 2px #565398 solid;
-  border-right: 2px #565398 solid;
-  background-color: #AF9FCC;
+  background-color: #595959;
 }
-/* line 134, ../scss/app.scss */
+/* line 129, ../scss/app.scss */
 .form ::-webkit-input-placeholder {
-  color: #333333;
+  color: #ffffff;
 }
-/* line 137, ../scss/app.scss */
+/* line 132, ../scss/app.scss */
 .form ::-moz-placeholder {
   /* Firefox 19+ */
-  color: #333333;
+  color: #ffffff;
 }
-/* line 140, ../scss/app.scss */
+/* line 135, ../scss/app.scss */
 .form :-ms-input-placeholder {
-  color: #333333;
+  color: #ffffff;
 }
-/* line 143, ../scss/app.scss */
+/* line 138, ../scss/app.scss */
 .form :-moz-placeholder {
   /* Firefox 18- */
-  color: #333333;
+  color: #ffffff;
 }
-/* line 146, ../scss/app.scss */
+/* line 141, ../scss/app.scss */
 .form select {
   height: 4rem;
-  border-top: 2px #565398 solid;
+  border: #8c8c8c 1px solid;
   border-left: none;
-  border-bottom: 2px #565398 solid;
-  border-right: 2px #565398 solid;
-  background-color: rgba(175, 159, 204, 0.8);
+  background-color: rgba(89, 89, 89, 0.8);
   font-size: 1.5rem;
-  color: #333333;
+  color: #ffffff;
+  font-family: "Open-Sans", sans-serif;
+  font-weight: 300;
 }
-/* line 155, ../scss/app.scss */
+/* line 150, ../scss/app.scss */
 .form select:focus {
   outline-color: transparent;
   outline-style: none;
+  background-color: #595959;
+}
+
+/* line 157, ../scss/app.scss */
+.arrow {
+  height: 2rem;
 }
 
 @media only screen and (max-width: 40em) {
-  /* line 163, ../scss/app.scss */
+  /* line 162, ../scss/app.scss */
   .form input {
     font-size: 1rem;
   }
-  /* line 166, ../scss/app.scss */
+  /* line 165, ../scss/app.scss */
   .form select {
     font-size: 1rem;
   }
 }
-/* line 172, ../scss/app.scss */
-.placeholder {
-  color: #333333;
-}
-
-/* line 176, ../scss/app.scss */
+/* line 171, ../scss/app.scss */
 .weather {
-  border: 2px #565398 solid;
-  border-collapse: collapse;
   background-color: rgba(255, 255, 255, 0.6);
-  color: #333333;
-  padding: 0;
+  color: #595959;
+  padding: 10px;
   margin-bottom: 1rem;
 }
-/* line 183, ../scss/app.scss */
+/* line 176, ../scss/app.scss */
 .weather:hover {
   background-color: #ffffff;
-  border: 2px #312f56 solid;
 }
-/* line 187, ../scss/app.scss */
+/* line 179, ../scss/app.scss */
 .weather a {
+  color: #595959;
+}
+/* line 182, ../scss/app.scss */
+.weather .date {
+  font-family: "Open-Sans", sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
   color: #333333;
 }
-/* line 190, ../scss/app.scss */
-.weather .weekday {
-  background-color: #AF9FCC;
-  margin: 0;
-  height: 2.5rem;
-  padding: .5rem 0;
-}
-/* line 195, ../scss/app.scss */
-.weather .weekday h2 {
-  color: #ffffff;
-  font-size: 1.5rem;
-  line-height: 2rem;
-  text-align: left;
-  padding-left: 1rem;
-  margin: 0;
-}
-/* line 204, ../scss/app.scss */
+/* line 188, ../scss/app.scss */
 .weather .weather_pic {
   padding: .5rem 1rem;
 }
-/* line 206, ../scss/app.scss */
+/* line 190, ../scss/app.scss */
 .weather .weather_pic img {
   width: auto;
   height: 3rem;
   display: block;
   margin: 0 auto;
 }
-/* line 213, ../scss/app.scss */
+/* line 197, ../scss/app.scss */
 .weather .temp {
-  color: #565398;
+  color: #33001E;
   display: inline-block;
   vertical-align: middle;
   line-height: normal;
+  text-align: center;
   padding: .25rem;
 }
-/* line 219, ../scss/app.scss */
-.weather .temp.high {
-  color: #A33170;
-}
-/* line 222, ../scss/app.scss */
+/* line 205, ../scss/app.scss */
 .weather .temp p {
-  font-size: 2rem;
+  font-size: 2.75rem;
   margin: 0;
   line-height: 4rem;
+  font-family: "Open-Sans", sans-serif;
+  font-weight: 300;
 }
-/* line 227, ../scss/app.scss */
+/* line 212, ../scss/app.scss */
 .weather .temp span {
   font-size: 1rem;
+  padding-top: 10px;
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
   line-height: normal;
 }
-/* line 233, ../scss/app.scss */
-.weather .temp .fa-arrow-up {
-  color: #A33170;
-}
-/* line 236, ../scss/app.scss */
-.weather .temp .fa-arrow-down {
-  color: #565398;
-}
 
-@media only screen and (min-width: 40.0625em) {
-  /* line 243, ../scss/app.scss */
+@media only screen and (min-width: 40.0625em) and (max-width: 64em) {
+  /* line 223, ../scss/app.scss */
   .weather .temp {
-    padding: .25rem;
+    text-align: left;
   }
-  /* line 245, ../scss/app.scss */
-  .weather .temp p {
-    font-size: 2.75rem;
-  }
-  /* line 248, ../scss/app.scss */
-  .weather .temp span {
-    font-size: 1.5rem;
+  /* line 227, ../scss/app.scss */
+  .weather .weather_pic img {
+    margin: 0;
   }
 }
 @media only screen and (min-width: 64.0625em) {
-  /* line 257, ../scss/app.scss */
-  .weather .weekday {
-    margin: 0;
-    height: 4rem;
-    padding: 1rem 0;
+  /* line 235, ../scss/app.scss */
+  .weather {
+    margin-top: 2rem;
+    background-color: rgba(255, 255, 255, 0);
   }
-  /* line 261, ../scss/app.scss */
-  .weather .weekday h2 {
-    text-align: center;
-    padding: 0;
+  /* line 238, ../scss/app.scss */
+  .weather:hover {
+    background-color: rgba(255, 255, 255, 0);
   }
-  /* line 266, ../scss/app.scss */
+  /* line 241, ../scss/app.scss */
+  .weather .weather-wrapper {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+  /* line 244, ../scss/app.scss */
+  .weather .weather-wrapper:hover {
+    background-color: #ffffff;
+  }
+  /* line 248, ../scss/app.scss */
   .weather .weather_pic {
     padding: 1.5rem 1rem;
+    height: 8rem;
   }
-  /* line 268, ../scss/app.scss */
+  /* line 251, ../scss/app.scss */
   .weather .weather_pic img {
     width: 100%;
     height: auto;
   }
-  /* line 273, ../scss/app.scss */
+  /* line 256, ../scss/app.scss */
   .weather .temp {
     height: 5rem;
     padding: 0 1rem;
   }
 }
-/* line 279, ../scss/app.scss */
-.margin {
-  margin-top: 2rem;
+/* line 263, ../scss/app.scss */
+.column + .column:last-child, .columns + .column:last-child, .column + .columns:last-child, .columns + .columns:last-child {
+  float: left;
 }
 
-/* line 283, ../scss/app.scss */
-.wrapper {
-  margin: 2rem 0;
+/* line 269, ../scss/app.scss */
+.user_info h3 {
+  font-family: "Open-Sans", sans-serif;
+  font-weight: 300;
+  font-size: 2.5rem;
+  color: #ffffff;
+  line-height: 1;
+  margin: 50px 0 0 0;
+}
+/* line 277, ../scss/app.scss */
+.user_info a {
+  font-family: "Open-Sans", sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  color: #FFD4F1;
 }
 
 /* line 286, ../scss/app.scss */
-.weather_statement {
-  position: relative;
-  background-color: #AF9FCC;
-  border-top: 2px #565398 solid;
-  border-left: 2px #565398 solid;
-  border-right: 2px #565398 solid;
-  padding: .5rem;
-  color: #ffffff;
-  margin-top: 2rem;
-}
-/* line 295, ../scss/app.scss */
-.weather_statement p {
-  font-size: 2rem;
-  margin: 0;
-  line-height: 1.2;
-}
-/* line 300, ../scss/app.scss */
-.weather_statement span {
-  color: #A33170;
-}
-
-@media only screen and (max-width: 40em) {
-  /* line 307, ../scss/app.scss */
-  .weather_statement p {
-    font-size: 1.5rem;
-  }
-}
-/* line 313, ../scss/app.scss */
 .weather_info {
-  position: relative;
-  background-color: #AF9FCC;
-  border-left: 2px #565398 solid;
-  border-right: 2px #565398 solid;
-  padding-top: .5rem;
+  margin-top: 2rem;
   color: #ffffff;
-  text-align: center;
-  padding: .5rem .5rem 1rem;
+  display: inline-block;
 }
-/* line 322, ../scss/app.scss */
-.weather_info span {
-  font-size: 1.25rem;
-}
-/* line 325, ../scss/app.scss */
+/* line 290, ../scss/app.scss */
 .weather_info img {
-  width: 50%;
+  width: 50px;
   height: auto;
+  display: block;
+  margin: 0 auto 10px auto;
 }
-/* line 329, ../scss/app.scss */
-.weather_info p {
-  font-size: 2.75rem;
+/* line 296, ../scss/app.scss */
+.weather_info h2 {
+  font-family: "Open-Sans", sans-serif;
+  font-weight: 300;
+  font-size: 4rem;
+  color: #ffffff;
+  line-height: 1;
   margin: 0;
 }
-
-@media only screen and (max-width: 40em) {
-  /* line 337, ../scss/app.scss */
-  .weather_info img {
-    width: 75%;
-    height: auto;
-  }
-  /* line 341, ../scss/app.scss */
-  .weather_info span {
-    font-size: .75rem;
-  }
-  /* line 344, ../scss/app.scss */
-  .weather_info p {
-    font-size: 1.75rem;
-  }
+/* line 303, ../scss/app.scss */
+.weather_info h2 span {
+  font-size: 1rem;
+  vertical-align: top;
 }
-/* line 350, ../scss/app.scss */
+/* line 308, ../scss/app.scss */
+.weather_info p {
+  font-family: "Open-Sans", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  margin: 0;
+  text-align: center;
+}
+
+/* line 318, ../scss/app.scss */
 .suggestion {
-  position: relative;
-  border-bottom: 2px #565398 solid;
-  border-left: 2px #565398 solid;
-  border-right: 2px #565398 solid;
-  background-color: rgba(255, 255, 255, 0.6);
-  padding: 1rem;
-  font-size: 2.75rem;
-  line-height: 1.2;
+  background-color: rgba(255, 255, 255, 0.4);
+  padding: 3rem 0;
+  margin: 0;
+  font-size: 3rem;
+  line-height: 1.1;
   color: #333333;
   text-align: center;
+  font-family: "Open-Sans", sans-serif;
+  font-weight: 300;
 }
 
 @media only screen and (max-width: 40em) {
-  /* line 363, ../scss/app.scss */
+  /* line 330, ../scss/app.scss */
   .suggestion {
     font-size: 2rem;
   }
 }
-/* line 368, ../scss/app.scss */
+/* line 334, ../scss/app.scss */
+.row .row {
+  width: 100%;
+  margin: 0;
+}
+
+/* line 341, ../scss/app.scss */
 .load {
-  background-color: #565398;
+  background-color: #A80659;
   overflow: hidden;
 }
-/* line 371, ../scss/app.scss */
+/* line 344, ../scss/app.scss */
 .load h1 {
   text-align: center;
   font-family: "Karma";
   color: #ffffff;
-  font-size: 3rem;
+}
+
+/* line 350, ../scss/app.scss */
+.heart {
+  width: 75px;
+  height: auto;
+  display: block;
+  margin: 100px auto 0;
+}
+
+/* line 356, ../scss/app.scss */
+.glass-wrapper {
+  display: inline-block;
+}
+
+/* line 359, ../scss/app.scss */
+.glasses {
+  text-align: center;
+  margin-top: 100px;
+}
+
+/* line 364, ../scss/app.scss */
+.glass {
+  width: 150px;
+  height: auto;
+  position: relative;
+  left: -10px;
+  display: block;
+  margin: 0 auto;
+}
+
+@-webkit-keyframes glassMoveA {
+  0% {
+    left: -200px;
+    opacity: 0;
+    -ms-transform: rotate(-16deg);
+    -webkit-transform: rotate(-16deg);
+    transform: rotate(-16deg);
+  }
+  70% {
+    opacity: 1;
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  90% {
+    left: 4px;
+  }
+  100% {
+    left: -10px;
+  }
+}
+/* line 396, ../scss/app.scss */
+.glass1 {
+  left: -10px;
+  -ms-transform: rotate(0deg);
+  /* IE 9 */
+  -webkit-transform: rotate(0deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(0deg);
+  -webkit-animation: glassMoveA 1.5s;
+  -moz-animation: glassMoveA 1.5s;
+  animation: glassMoveA 1.5s;
+}
+
+@-webkit-keyframes glassMoveB {
+  0% {
+    left: 200px;
+    opacity: 0;
+    -ms-transform: rotate(16deg);
+    -webkit-transform: rotate(16deg);
+    transform: rotate(16deg);
+  }
+  70% {
+    opacity: 1;
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  90% {
+    left: -4px;
+  }
+  100% {
+    left: 10px;
+  }
+}
+/* line 431, ../scss/app.scss */
+.glass2 {
+  left: 10px;
+  -ms-transform: rotate(0deg);
+  /* IE 9 */
+  -webkit-transform: rotate(0deg);
+  /* Chrome, Safari, Opera */
+  transform: rotate(0deg);
+  -webkit-animation: glassMoveB 1.5s;
+  -moz-animation: glassMoveB 1.5s;
+  animation: glassMoveB 1.5s;
+}
+
+@-webkit-keyframes heartMove {
+  0% {
+    top: 150px;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    top: 0;
+  }
+}
+/* line 458, ../scss/app.scss */
+.heart {
+  position: relative;
+  top: 0px;
+  -webkit-animation: heartMove 1.5s;
+  -moz-animation: heartMove 1.5s;
+  animation: heartMove 1.5s;
+  -webkit-animation-delay: 1.2s;
+  /* Chrome, Safari, Opera */
+  animation-delay: 1.2s;
+  opacity: 0;
+}
+
+@-webkit-keyframes titleFade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* line 479, ../scss/app.scss */
+.loadTitle {
+  -webkit-animation: titleFade 1s;
+  -moz-animation: titleFade 1s;
+  animation: titleFade 1s;
+  -webkit-animation-delay: 1.2s;
+  /* Chrome, Safari, Opera */
+  animation-delay: 1.2s;
+  opacity: 0;
+  font-size: 5rem;
+}
+
+/* line 490, ../scss/app.scss */
+.change {
+  opacity: 1;
+}
+
+/* line 493, ../scss/app.scss */
+a {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
 }

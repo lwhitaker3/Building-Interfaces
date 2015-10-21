@@ -2,20 +2,22 @@
 @import "foundation";
 
 
-$maincolor:     #AF9FCC;
-$dark:          #565398;
-$secondary:     #A33170;
+$maincolor:     #A80659;
+$dark:          #33001E;
+$light:         #FFD4F1;
 $white:         #ffffff;
-$darkgrey:      #333333;
+$darkgrey:      #595959;
+$darkergrey:    #333333;
 $maintext:      'Karma';
+$bodytext:      'Open-Sans';
 
 body{
   &.home{
-    background-image: url('../img/main_photo.jpg');
+    background-image: url('../img/main_photo1.png');
   }
   &.weather_page{
-    background-image: url('../img/weather_photo.jpg');
-    background-position: bottom;
+    background-image: url('../img/roses.png');
+    background-position: center;
   }
   background-repeat: no-repeat;
   background-position: center;
@@ -47,15 +49,9 @@ h1{
       padding: .5rem 1rem;
     }
   }
-  .fa{
-    padding: .75rem 1rem;
-    color: $white;
-    &:hover{
-      color: $dark;
-    }
-  }
-  .fa-2x{
-    font-size: 2rem;
+  .info{
+    height: 4.5rem;
+    padding: 1.25rem 1rem;
   }
 }
 @media #{$small-only} {
@@ -67,9 +63,9 @@ h1{
         padding: .5rem 1rem;
       }
     }
-    .fa{
-      font-size: 2rem;
-      padding: .5rem 1rem;
+    .info{
+      height: 3rem;
+      padding: 1rem 1rem;
     }
   }
 }
@@ -77,86 +73,89 @@ h1{
 
 .reveal-modal{
   background-color: $white;
-  color: $secondary;
+  color: $darkergrey;
+  p{
+    font-family: $bodytext, sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: $dark;
+  }
+
 }
 
 a.button{
   text-align: center;
-  background-color: $dark;
-  padding: 1rem 1rem;
+  background-color: $maincolor;
+  padding: .5rem 3rem;
   color: $white;
   &:hover{
-    background-color: $white;
+    background-color: darken($maincolor, 10%);
     color: $dark;
-  }
-  &.other_option{
-    background-color: $secondary;
-    padding: 1rem 1rem;
-    &:hover{
-      background-color: $maincolor;
-      color: $white;
-    }
   }
 }
 
-
 .form{
   margin-top: 2rem;
+  p{
+    font-family: $bodytext, sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    color: $dark;
+  }
   .prefix{
     height: 4rem;
     padding: .5rem 0;
-    border-top: 2px $dark solid;
-    border-left: 2px $dark solid;
-    border-bottom: 2px $dark solid;
+    border: lighten($darkgrey, 20%) 1px solid;
     border-right: none;
-    background-color: rgba( $maincolor, .8 );
-    color: $secondary;
+    background-color: $darkgrey;
+    color: $white;
+    img{
+      height: 3rem;
+    }
   }
   input{
     height: 4rem;
-    border-top: 2px $dark solid;
+    border: lighten($darkgrey, 20%) 1px solid;
     border-left: none;
-    border-bottom: 2px $dark solid;
-    border-right: 2px $dark solid;
-    background-color: rgba( $maincolor, .8 );
+    background-color: rgba( $darkgrey, .8 );
     font-size: 1.5rem;
-    color: $darkgrey;
+    color: $white;
+    font-family: $bodytext, sans-serif;
+    font-weight: 300;
     &:focus {
-      outline-color: transparent;
-      outline-style: none;
-      border-top: 2px $dark solid;
-      border-left: none;
-      border-bottom: 2px $dark solid;
-      border-right: 2px $dark solid;
-      background-color: $maincolor;
+      background-color: $darkgrey;
     }
   }
   ::-webkit-input-placeholder {
-    color: $darkgrey;
+    color: $white;
   }
   ::-moz-placeholder { /* Firefox 19+ */
-    color: $darkgrey;
+    color: $white;
   }
   :-ms-input-placeholder {
-    color: $darkgrey;
+    color: $white;
   }
   :-moz-placeholder { /* Firefox 18- */
-    color: $darkgrey;
+    color: $white;
   }
   select{
     height: 4rem;
-    border-top: 2px $dark solid;
+    border: lighten($darkgrey, 20%) 1px solid;
     border-left: none;
-    border-bottom: 2px $dark solid;
-    border-right: 2px $dark solid;
-    background-color: rgba( $maincolor, .8 );
+    background-color: rgba( $darkgrey, .8 );
     font-size: 1.5rem;
-    color: $darkgrey;
+    color: $white;
+    font-family: $bodytext, sans-serif;
+    font-weight: 300;
     &:focus {
       outline-color: transparent;
       outline-style: none;
+      background-color: $darkgrey;
     }
   }
+}
+.arrow{
+  height: 2rem;
 }
 @media #{$small-only} {
   .form{
@@ -169,37 +168,22 @@ a.button{
   }
 }
 
-.placeholder{
-  color: $darkgrey;
-}
-
 .weather{
-  border: 2px $dark solid;
-  border-collapse: collapse;
   background-color: rgba( $white, .6 );
   color: $darkgrey;
-  padding: 0;
+  padding: 10px;
   margin-bottom: 1rem;
   &:hover{
     background-color: $white;
-    border: 2px darken($dark, 20%) solid;
   }
   a{
     color: $darkgrey;
   }
-  .weekday{
-    background-color: $maincolor;
-    margin: 0;
-    height: 2.5rem;
-    padding: .5rem 0;
-    h2{
-      color: $white;
-      font-size: 1.5rem;
-      line-height: 2rem;
-      text-align: left;
-      padding-left: 1rem;
-      margin: 0;
-    }
+  .date{
+    font-family: $bodytext, sans-serif;
+    font-weight: 300;
+    font-size: 2rem;
+    color: $darkergrey;
   }
   .weather_pic{
     padding: .5rem 1rem;
@@ -215,56 +199,55 @@ a.button{
     display: inline-block;
     vertical-align: middle;
     line-height: normal;
+    text-align: center;
     padding: .25rem;
-    &.high{
-      color: $secondary;
-    }
+
     p{
-      font-size: 2rem;
+      font-size: 2.75rem;
       margin: 0;
       line-height: 4rem;
+      font-family: $bodytext, sans-serif;
+      font-weight: 300;
     }
     span{
       font-size: 1rem;
+      padding-top: 10px;
       display: inline-block;
-      vertical-align: middle;
+      vertical-align: top;
       line-height: normal;
-    }
-    .fa-arrow-up{
-      color: $secondary;
-    }
-    .fa-arrow-down{
-      color: $dark;
     }
   }
 }
-@media #{$medium-up} {
+@media #{$medium-only} {
   .weather{
     .temp{
-      padding: .25rem;
-      p{
-        font-size: 2.75rem;
-      }
-      span{
-        font-size: 1.5rem;
+      text-align: left;
+    }
+    .weather_pic{
+      img{
+        margin: 0;
       }
     }
+  }
 }
 
-}
 @media #{$large-up} {
   .weather{
-    .weekday{
-      margin: 0;
-      height: 4rem;
-      padding: 1rem 0;
-      h2{
-        text-align: center;
-        padding: 0;
+    margin-top: 2rem;
+    background-color: rgba($white,0);
+    &:hover{
+      background-color: rgba($white,0);
+    }
+    .weather-wrapper{
+      display: inline-block;
+      background-color: rgba( $white, .6 );
+      &:hover{
+        background-color: $white;
       }
     }
     .weather_pic{
       padding: 1.5rem 1rem;
+      height: 8rem;
       img{
         width: 100%;
         height: auto;
@@ -276,102 +259,239 @@ a.button{
     }
   }
 }
-.margin{
-  margin-top: 2rem;
+
+.column + .column:last-child, .columns + .column:last-child, .column + .columns:last-child, .columns + .columns:last-child {
+    float: left;
 }
 
-.wrapper{
-  margin: 2rem 0;
-}
-.weather_statement{
-  position: relative;
-  background-color: $maincolor;
-  border-top: 2px $dark solid;
-  border-left: 2px $dark solid;
-  border-right: 2px $dark solid;
-  padding: .5rem;
-  color: $white;
-  margin-top: 2rem;
-  p{
+
+.user_info{
+  h3{
+    font-family: $bodytext, sans-serif;
+    font-weight: 300;
+    font-size: 2.5rem;
+    color: $white;
+    line-height: 1;
+    margin: 50px 0 0 0;
+  }
+  a{
+    font-family: $bodytext, sans-serif;
+    font-weight: 300;
     font-size: 2rem;
-    margin: 0;
-    line-height: 1.2;
-  }
-  span{
-    color: $secondary;
+    color: $light;
   }
 }
 
-@media #{$small-only}{
-  .weather_statement{
-    p{
-      font-size: 1.5rem;
-    }
-  }
-}
 
 .weather_info{
-  position: relative;
-  background-color: $maincolor;
-  border-left: 2px $dark solid;
-  border-right: 2px $dark solid;
-  padding-top: .5rem;
+  margin-top: 2rem;
   color: $white;
-  text-align: center;
-  padding: .5rem .5rem 1rem;
-  span{
-    font-size: 1.25rem;
-  }
+  display: inline-block;
   img{
-    width: 50%;
+    width: 50px;
     height: auto;
+    display: block;
+    margin: 0 auto 10px auto;
+  }
+  h2{
+    font-family: $bodytext, sans-serif;
+    font-weight: 300;
+    font-size: 4rem;
+    color: $white;
+    line-height: 1;
+    margin: 0;
+    span{
+      font-size: 1rem;
+      vertical-align: top;
+    }
   }
   p{
-    font-size: 2.75rem;
+    font-family: $bodytext, sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
     margin: 0;
+    text-align: center;
   }
 }
 
-@media #{$small-only}{
-  .weather_info{
-    img{
-      width: 75%;
-      height: auto;
-    }
-    span{
-      font-size: .75rem;
-    }
-    p{
-      font-size: 1.75rem;
-    }
-  }
-}
 
 .suggestion{
-  position: relative;
-  border-bottom: 2px $dark solid;
-  border-left: 2px $dark solid;
-  border-right: 2px $dark solid;
-  background-color: rgba( $white, .6 );
-  padding: 1rem;
-  font-size: 2.75rem;
-  line-height: 1.2;
-  color: $darkgrey;
+  background-color: rgba( $white, .4 );
+  padding: 3rem 0;
+  margin: 0;
+  font-size: 3rem;
+  line-height: 1.1;
+  color: $darkergrey;
   text-align: center;
+  font-family: $bodytext, sans-serif;
+  font-weight: 300;
 }
 @media #{$small-only}{
   .suggestion{
     font-size: 2rem;
   }
 }
+.row .row{
+  width: 100%;
+  margin: 0;
+}
+
+//Animation
 
 .load{
-  background-color: $dark;
+  background-color: $maincolor;
   overflow: hidden;
   h1{
     text-align: center;
     font-family: $maintext;
     color: $white;
-    font-size: 3rem;
   }
+}
+.heart{
+  width: 75px;
+  height: auto;
+  display: block;
+  margin: 100px auto 0;
+}
+.glass-wrapper{
+  display: inline-block;
+}
+.glasses{
+  text-align: center;
+  margin-top: 100px;
+}
+
+.glass{
+  width: 150px;
+  height: auto;
+  position: relative;
+  left: -10px;
+  display: block;
+  margin: 0 auto;
+}
+
+
+@-webkit-keyframes glassMoveA {
+  0% {
+    left: -200px;
+    opacity: 0;
+    -ms-transform: rotate(-16deg);
+    -webkit-transform: rotate(-16deg);
+    transform: rotate(-16deg);
+  }
+  70%{
+    opacity: 1;
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  90% {
+    left: 4px;
+  }
+  100% {
+    left: -10px;
+  }
+}
+
+.glass1 {
+    left: -10px;
+
+
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+
+    -webkit-animation: glassMoveA 1.5s;
+    -moz-animation: glassMoveA 1.5s;
+    animation: glassMoveA 1.5s;
+}
+@-webkit-keyframes glassMoveB {
+  0% {
+    left: 200px;
+    opacity: 0;
+    -ms-transform: rotate(16deg);
+    -webkit-transform: rotate(16deg);
+    transform: rotate(16deg);
+  }
+  70%{
+    opacity: 1;
+    -ms-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  90% {
+    left: -4px;
+
+  }
+  100% {
+    left: 10px;
+
+  }
+}
+.glass2 {
+
+    left: 10px;
+
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+
+    -webkit-animation: glassMoveB 1.5s;
+    -moz-animation: glassMoveB 1.5s;
+    animation: glassMoveB 1.5s;
+
+}
+
+@-webkit-keyframes heartMove{
+  0% {
+    top: 150px;
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  100% {
+    top: 0;
+  }
+}
+
+.heart {
+    position: relative;
+    top: 0px;
+    -webkit-animation: heartMove 1.5s;
+    -moz-animation: heartMove 1.5s;
+    animation: heartMove 1.5s;
+    -webkit-animation-delay: 1.2s; /* Chrome, Safari, Opera */
+    animation-delay: 1.2s;
+    opacity: 0;
+
+}
+
+@-webkit-keyframes titleFade {
+  0% {
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.loadTitle {
+    -webkit-animation: titleFade 1s;
+    -moz-animation: titleFade 1s;
+    animation: titleFade 1s;
+    -webkit-animation-delay: 1.2s; /* Chrome, Safari, Opera */
+    animation-delay: 1.2s;
+    opacity: 0;
+    font-size: 5rem;
+
+}
+
+.change{
+  opacity: 1;
+}
+a{
+  display: inline-block;
+  height: 100%;
+  width:  100%;
 }

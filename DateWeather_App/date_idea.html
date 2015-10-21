@@ -7,52 +7,49 @@
     <link rel="stylesheet" href="stylesheets/app.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Karma' rel='stylesheet' type='text/css'>
 
   </head>
   <body class="weather_page">
     <nav class="top-bar" data-topbar role="navigation">
       <ul class="left">
-        <li><a href="index.html"><img src="img/logo.png" alt="main image"></a></li>
+        <li><a href="index.html"><img src="img/logo-01.png" alt="main image"></a></li>
       </ul>
     </nav>
 
+    <div class="row suggestion_container">
 
-    <div class="wrapper">
-      <div class="row">
-        <div class="medium-8 small-10 small-centered columns">
-          <div class="row weather_statement collapse">
-            <div class="small-12 columns"><p>On <span>DATE</span> in <span>PLACE</span> the weather is:</p></div>
-          </div>
-          <div class="row weather_info collapse">
-            <div class="small-4 columns"><img src='img/rain.png' alt='thunder'></div>
-            <div class="small-4 columns"><p><span><i class="fa fa-arrow-up"></i></span> 90<span>&#8457; </span></p></div>
-            <div class="small-4 columns"><p><span><i class="fa fa-arrow-down"></i></span> 90<span>&#8457; </span></p></div>
-          </div>
+      <div class="user_info row">
+        <div class="small-12 columns">
+          <h3>Seattle</h3>
+          <a href="weather.html"><p>8/17/15</p></a>
         </div>
       </div>
 
       <div class="row">
-        <div class="medium-8 small-10 small-centered columns">
-          <div class="row suggestion collapse">
-            <div class="small-12 columns">It's raining! Have a game night!</div>
+        <a href="date_idea.html"><div class="medium-8 small-10 small-centered columns">
+          <div class="row suggestion">
+            <div class="small-12 columns">It's raining <br> Have a game night!</div>
+          </div>
+        </a></div>
+      </div>
+
+      <div class="row">
+        <div class="small-12 columns">
+          <div class= "weather_info">
+            <img src="img/rain.png" alt="main image">
+            <h2>73<span>&#8457;</span></h2>
+            <p>70/80</p>
           </div>
         </div>
       </div>
 
     </div>
 
-    <div class="row">
-      <div class="medium-8 small-10 small-centered columns">
-        <a href="date_idea.html" class="button other_option right small-6">Another Idea</a>
-      </div>
-    </div>
 
-    <div class="row">
-      <div class="medium-8 small-10 small-centered columns">
-        <a href="weather.html" class="button other_option right small-6">Change the Day</a>
-      </div>
-    </div>
+
+
 
 
 
