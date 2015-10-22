@@ -346,6 +346,11 @@ a.button{
     font-family: $maintext;
     color: $white;
   }
+  a{
+    display: inline-block;
+    height: 100%;
+    width:  100%;
+  }
 }
 .heart{
   width: 75px;
@@ -489,9 +494,4 @@ a.button{
 
 .change{
   opacity: 1;
-}
-a{
-  display: inline-block;
-  height: 100%;
-  width:  100%;
 }

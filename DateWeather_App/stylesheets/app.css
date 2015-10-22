@@ -9822,8 +9822,14 @@ a.button:hover {
   font-family: "Karma";
   color: #ffffff;
 }
+/* line 349, ../scss/app.scss */
+.load a {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
 
-/* line 350, ../scss/app.scss */
+/* line 355, ../scss/app.scss */
 .heart {
   width: 75px;
   height: auto;
@@ -9831,18 +9837,18 @@ a.button:hover {
   margin: 100px auto 0;
 }
 
-/* line 356, ../scss/app.scss */
+/* line 361, ../scss/app.scss */
 .glass-wrapper {
   display: inline-block;
 }
 
-/* line 359, ../scss/app.scss */
+/* line 364, ../scss/app.scss */
 .glasses {
   text-align: center;
   margin-top: 100px;
 }
 
-/* line 364, ../scss/app.scss */
+/* line 369, ../scss/app.scss */
 .glass {
   width: 150px;
   height: auto;
@@ -9873,7 +9879,7 @@ a.button:hover {
     left: -10px;
   }
 }
-/* line 396, ../scss/app.scss */
+/* line 401, ../scss/app.scss */
 .glass1 {
   left: -10px;
   -ms-transform: rotate(0deg);
@@ -9907,7 +9913,7 @@ a.button:hover {
     left: 10px;
   }
 }
-/* line 431, ../scss/app.scss */
+/* line 436, ../scss/app.scss */
 .glass2 {
   left: 10px;
   -ms-transform: rotate(0deg);
@@ -9932,7 +9938,7 @@ a.button:hover {
     top: 0;
   }
 }
-/* line 458, ../scss/app.scss */
+/* line 463, ../scss/app.scss */
 .heart {
   position: relative;
   top: 0px;
@@ -9953,7 +9959,7 @@ a.button:hover {
     opacity: 1;
   }
 }
-/* line 479, ../scss/app.scss */
+/* line 484, ../scss/app.scss */
 .loadTitle {
   -webkit-animation: titleFade 1s;
   -moz-animation: titleFade 1s;
@@ -9965,14 +9971,7 @@ a.button:hover {
   font-size: 5rem;
 }
 
-/* line 490, ../scss/app.scss */
+/* line 495, ../scss/app.scss */
 .change {
   opacity: 1;
-}
-
-/* line 493, ../scss/app.scss */
-a {
-  display: inline-block;
-  height: 100%;
-  width: 100%;
 }
