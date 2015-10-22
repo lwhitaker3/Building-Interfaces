@@ -351,29 +351,32 @@ a.button{
     height: 100%;
     width:  100%;
   }
-}
-.heart{
-  width: 75px;
-  height: auto;
-  display: block;
-  margin: 100px auto 0;
-}
-.glass-wrapper{
-  display: inline-block;
-}
-.glasses{
-  text-align: center;
-  margin-top: 100px;
+  .heart{
+    width: 75px;
+    height: auto;
+    display: block;
+    margin: 100px auto 0;
+  }
+  .glass-wrapper{
+    display: inline-block;
+  }
+  .glasses{
+    text-align: center;
+    margin-top: 100px;
+  }
+  .glass{
+    width: 150px;
+    height: auto;
+    position: relative;
+    left: -10px;
+    display: block;
+    margin: 0 auto;
+  }
 }
 
-.glass{
-  width: 150px;
-  height: auto;
-  position: relative;
-  left: -10px;
-  display: block;
-  margin: 0 auto;
-}
+
+
+
 
 
 @-webkit-keyframes glassMoveA {

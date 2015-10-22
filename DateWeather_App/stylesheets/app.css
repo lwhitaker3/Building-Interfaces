@@ -9828,28 +9828,24 @@ a.button:hover {
   height: 100%;
   width: 100%;
 }
-
-/* line 355, ../scss/app.scss */
-.heart {
+/* line 354, ../scss/app.scss */
+.load .heart {
   width: 75px;
   height: auto;
   display: block;
   margin: 100px auto 0;
 }
-
-/* line 361, ../scss/app.scss */
-.glass-wrapper {
+/* line 360, ../scss/app.scss */
+.load .glass-wrapper {
   display: inline-block;
 }
-
-/* line 364, ../scss/app.scss */
-.glasses {
+/* line 363, ../scss/app.scss */
+.load .glasses {
   text-align: center;
   margin-top: 100px;
 }
-
-/* line 369, ../scss/app.scss */
-.glass {
+/* line 367, ../scss/app.scss */
+.load .glass {
   width: 150px;
   height: auto;
   position: relative;
@@ -9879,7 +9875,7 @@ a.button:hover {
     left: -10px;
   }
 }
-/* line 401, ../scss/app.scss */
+/* line 404, ../scss/app.scss */
 .glass1 {
   left: -10px;
   -ms-transform: rotate(0deg);
@@ -9913,7 +9909,7 @@ a.button:hover {
     left: 10px;
   }
 }
-/* line 436, ../scss/app.scss */
+/* line 439, ../scss/app.scss */
 .glass2 {
   left: 10px;
   -ms-transform: rotate(0deg);
@@ -9938,7 +9934,7 @@ a.button:hover {
     top: 0;
   }
 }
-/* line 463, ../scss/app.scss */
+/* line 466, ../scss/app.scss */
 .heart {
   position: relative;
   top: 0px;
@@ -9959,7 +9955,7 @@ a.button:hover {
     opacity: 1;
   }
 }
-/* line 484, ../scss/app.scss */
+/* line 487, ../scss/app.scss */
 .loadTitle {
   -webkit-animation: titleFade 1s;
   -moz-animation: titleFade 1s;
@@ -9971,7 +9967,7 @@ a.button:hover {
   font-size: 5rem;
 }
 
-/* line 495, ../scss/app.scss */
+/* line 498, ../scss/app.scss */
 .change {
   opacity: 1;
 }
